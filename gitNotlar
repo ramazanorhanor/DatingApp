@@ -8,3 +8,14 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/ramazanorhanor/DatingApp.git
 git push -u origin main
+
+
+
+PS D:\tubitakSage_Udemy\DatingApp_VS_Code> git push -u origin main
+fatal: unable to access 'https://github.com/ramazanorhanor/DatingApp.git/': SSL certificate problem: self signed certificate in certificate chain
+
+git config --global http.sslVerify false
+
+
+en son aşağıdaki push kodu çalıştırılır 
+git push -u origin main
