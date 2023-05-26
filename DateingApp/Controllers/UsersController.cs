@@ -34,12 +34,12 @@ namespace DateingApp.Controllers
             return  users;
         }
 
-        ////https://localhost:7272/api/users/2
+        // https://localhost:7272/api/users/2
         //[HttpGet("{id}")]
         //// synchronously
         //public ActionResult<AppUser> GetUser(int id)
         //{
-        //   // var user = _context.Users.SingleOrDefault(x => x.Id == id);
+       
         //    var user = _context.Users.Find(id);
         //    return user;
         //} 
