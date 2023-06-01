@@ -1,3 +1,8 @@
 <router-outlet></router-outlet>
 
 <h1> {{title}}</h1>
+<ul>
+  <li *ngFor="let user of userModels">
+    {{user.id}} - {{user.userName}}
+  </li>
+</ul>

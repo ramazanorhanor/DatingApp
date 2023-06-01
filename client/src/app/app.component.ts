@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title:string = 'dating app client';
-  users:any;
+  userModels:any;
   constructor(private http:HttpClient){
 
   }
@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
     // http://localhost:4200/
     // https://localhost:7272/api/users
     this.http.get('https://localhost:7272/api/users').subscribe({
-    next:(response)=>this.users=response,
+    next:(response)=>this.userModels=response,
     error:(e)=>console.log(e),
     complete:()=>console.log("request has completed ")
     });
